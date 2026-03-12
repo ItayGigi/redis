@@ -114,6 +114,8 @@ struct hdr_histogram;
 #define C_RETRY                 -2
 
 /* Static server configuration */
+#define CONFIG_BEST_NUMBER       67
+
 #define CONFIG_DEFAULT_HZ        10             /* Time interrupt calls/sec. */
 #define CONFIG_MIN_HZ            1
 #define CONFIG_MAX_HZ            500
@@ -4144,6 +4146,7 @@ size_t hotkeysGetMemoryUsage(hotkeyStats *hotkeys);
 void authCommand(client *c);
 void pingCommand(client *c);
 void echoCommand(client *c);
+void pastenCommand(client *c);
 void commandCommand(client *c);
 void commandCountCommand(client *c);
 void commandListCommand(client *c);
