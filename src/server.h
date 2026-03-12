@@ -114,6 +114,8 @@ struct hdr_histogram;
 #define C_RETRY                 -2
 
 /* Static server configuration */
+#define CONFIG_DEL_WAIT_USECONDS (500*1000)     /* Half a second. */
+
 #define CONFIG_DEFAULT_HZ        10             /* Time interrupt calls/sec. */
 #define CONFIG_MIN_HZ            1
 #define CONFIG_MAX_HZ            500
