@@ -1,0 +1,22 @@
+{
+    "PASTEN": {
+        "summary": "Returns the best number.",
+        "complexity": "O(1)",
+        "group": "generic",
+        "since": "6.8.2",
+        "arity": 1,
+        "function": "pastenCommand",
+        "command_flags": [
+            "LOADING",
+            "STALE",
+            "FAST"
+        ],
+        "acl_categories": [
+            "CONNECTION"
+        ],
+        "reply_schema": {
+            "description": "The best number",
+            "type": "integer"
+        }
+    }
+}
